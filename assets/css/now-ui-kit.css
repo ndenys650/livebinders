@@ -3479,7 +3479,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .show>.btn-primary.dropdown-toggle,
 .show>.btn-primary.dropdown-toggle:focus,
 .show>.btn-primary.dropdown-toggle:hover {
-    background-color: #a92d63;
+    background-color: #FF3636;
     color: #FFFFFF;
     box-shadow: none;
 }
@@ -3525,8 +3525,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary.btn-simple:focus,
 .btn-primary.btn-simple:active {
     background-color: transparent;
-    color: #fa7a50;
-    border-color: #fa7a50;
+    color: #FF3636;
+    border-color: #FF3636;
     box-shadow: none;
 }
 
@@ -3538,7 +3538,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary.btn-link:focus,
 .btn-primary.btn-link:active {
     background-color: transparent;
-    color: #fa7a50;
+    color: #FF3636;
     text-decoration: none;
     box-shadow: none;
 }
@@ -3976,13 +3976,13 @@ fieldset[disabled] .btn-neutral.active {
 .show>.btn-neutral.dropdown-toggle:focus,
 .show>.btn-neutral.dropdown-toggle:hover {
     background-color: #FFFFFF;
-    color: #fa7a50;
+    color: #FF3636;
     box-shadow: none;
 }
 
 .btn-neutral:hover,
 .btn-neutral:focus {
-    color: #fa7a50;
+    color: #FF3636;
 }
 
 .btn-neutral:hover:not(.nav-link),
@@ -5456,7 +5456,7 @@ body {
 .navbar .navbar-nav .nav-link:not(.btn) {
     text-transform: uppercase;
     font-size: 0.7142em;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 1.6rem;
     line-height: 1.625rem;
 }
 
@@ -8832,7 +8832,7 @@ Created using IcoMoon - icomoon.io
 
 .index-page .page-header,
 .presentation-page .page-header {
-    height: 110vh;
+    height: 10vh;
 }
 
 .index-page .page-header .container>.content-center,

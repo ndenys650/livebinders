@@ -72,31 +72,69 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div class="page-header header-filter">
-                        <div class="page-header-image" style="background-image: url('assets/img/bg20.jpg');"></div>
+                    <div class="page-header">
                         <div class="content-center">
-                            <div class="container text-left">
-                                <div class="content-center">
-                                    <div class="row">
-                                        <div class="col-md-6 ml-auto mr-auto text-right">
-                                            <h1 class="title">On the run tour.</h1>
-                                            <h4 class="description ">On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which documents the September 12 and 13, 2014, shows of American singers' Beyoncé and Jay-Z joint co-headlining venture On the Run Tour.</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="iframe-container">
-                                                <iframe height="300" src="https://www.youtube.com/embed/dM-FgpyVoJU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="padding-top: 30px">
-                                        <div class="col-md-3 ml-auto mr-auto text-right">
-                                            <button class="btn btn-primary btn-lg" rel="tooltip" title="It's Free!" data-placement="bottom">Sign Up!</button>
-                                        </div>
+                            <div class="row text-center mx-5">
+                                <div class="col-md-6 m-auto justify-content-center">
+                                    <h1 class="title">Ready to Present?</h1>
+                                    <h4 class="description ">Put it in a LiveBinder!</h4>
+                                    <br>
+                                    <button class="btn btn-primary btn-lg" rel="tooltip" title="It's Free!" data-placement="bottom">Sign Up!</button>
 
+                                </div>
+                                <div class="col-md-10 col-lg-6 m-auto justify-content-center">
+                                    <div class="iframe-container">
+                                        <iframe id="existing-iframe-example" width="640" height="360" src="https://www.youtube.com/embed/dM-FgpyVoJU?enablejsapi=1" frameborder="0" style="border: solid 4px #37474F"></iframe>
+                                        <script type="text/javascript">
+                                            var tag = document.createElement('script');
+                                            tag.id = 'iframe-demo';
+                                            tag.src = 'https://www.youtube.com/iframe_api';
+                                            var firstScriptTag = document.getElementsByTagName('script')[0];
+                                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                                            var player;
+
+                                            function onYouTubeIframeAPIReady() {
+                                                player = new YT.Player('existing-iframe-example', {
+                                                    events: {
+                                                        'onReady': onPlayerReady,
+                                                        'onStateChange': onPlayerStateChange
+                                                    }
+                                                });
+                                            }
+
+                                            function onPlayerReady(event) {
+                                                document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+                                            }
+
+                                            function changeBorderColor(playerStatus) {
+                                                var color;
+                                                if (playerStatus == -1) {
+                                                    color = "#37474F"; // unstarted = gray
+                                                } else if (playerStatus == 0) {
+                                                    color = "#FFFF00"; // ended = yellow
+                                                } else if (playerStatus == 1) {
+                                                    color = "#33691E"; // playing = green
+                                                } else if (playerStatus == 2) {
+                                                    color = "#DD2C00"; // paused = red
+                                                } else if (playerStatus == 3) {
+                                                    color = "#AA00FF"; // buffering = purple
+                                                } else if (playerStatus == 5) {
+                                                    color = "#FF6DOO"; // video cued = orange
+                                                }
+                                                if (color) {
+                                                    document.getElementById('existing-iframe-example').style.borderColor = color;
+                                                }
+                                            }
+
+                                            function onPlayerStateChange(event) {
+                                                changeBorderColor(event.data);
+                                            }
+                                        </script>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -106,9 +144,11 @@
                             <div class="container">
                                 <div class="content-center">
                                     <div class="row">
-                                        <div class="col-md-8 ml-auto mr-auto text-center">
-                                            <h1 class="title">Island of legends.</h1>
-                                            <h4 class="description ">The islands of Malta and Gozo are brilliant for a family holiday, packed with fun places to visit whatever your children’s ages. The islands’ small size means everywhere is within easy reach.</h4>
+                                        <div class="col-md-8 m-auto text-center">
+                                            <h1 class="title">Simplifying the Cloud Sharing Experience</h1>
+                                            <h4 class="description">Engage with live content, not just a list of links</h4>
+                                            <h4 class="description">Provide context for your resources</h4>
+                                            <h4 class="description">Package it professionally for flexible sharing</h4>
                                             <br />
                                             <h5>Connect with us on:</h5>
                                             <div class="buttons">
@@ -140,16 +180,19 @@
                                 <div class="content-center">
                                     <div class="row">
                                         <div class="col-md-6 text-left">
-                                            <h1 class="title">Arctic Sea ice.</h1>
-                                            <h4 class="description ">According to the National Oceanic and Atmospheric Administration, Ted Scambos, NSIDC lead scientist, puts the potentially record low maximum sea ice extent this year down to low ice extent in the Pacific and
-                                                a late drop in ice extent in the Barents Sea.</h4>
-                                            <br />
+                                            <h3 class="title">An online digital binder for organizing your resources</h3>
+                                            <ul>
+                                                <li>Look professional</li>
+                                                <li>Feel organized</li>
+                                                <li>Make an impact</li>
+                                            </ul>
+                                            <br/>
                                             <div class="buttons">
                                                 <a href="#pablo" class="btn btn-neutral btn-primary btn-lg mr-1">
                                                     <i class="now-ui-icons files_single-copy-04"></i> Read More..
                                                 </a>
                                                 <a href="#pablo" class="btn btn-primary btn-lg">
-                                                    <i class="now-ui-icons arrows-1_share-66"></i> Subscribe
+                                                    <i class="now-ui-icons arrows-1_share-66"></i> See More...
                                                 </a>
                                             </div>
                                         </div>
@@ -170,72 +213,75 @@
     </div>
     <!--     *********    END HEADER 3      *********      -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container" style="background-color: #387ea0;">
-            <div class="navbar-translate">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdownMenuLink" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar bar1"></span>
-            <span class="navbar-toggler-bar bar2"></span>
-            <span class="navbar-toggler-bar bar3"></span>
-        </button>
-            </div>
-            <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                </ul>
+    <div class="container-fluid sticky-top" id="menu-dropdown" style="background-color: #387ea0;">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-primary justify-content-center">
+                    <div class="container justify-content-center">
+                        <div class="navbar-translate">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdownMenuLink" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
+                            <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Conferences</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Education</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Home</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Business</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Featured</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <i class="now-ui-icons design_app"></i>
+                                        <p>Upgraded</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
     <!-- End Navbar -->
     <div class="presentation-page section section-components" data-background-color="dark-red">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="text-center title">Impressive collection of elements
+                    <h2 class="text-center title">Binder Counters
                         <br>
                         <small class="description">Designed to look gorgeous together</small>
                     </h2>
-                    <h5 class="text-center description">Now UI Kit Pro comes with a huge number of customisable elements. They are not only designed to be pixel perfect and light but they are also easy to use and combine well with other components.</h5>
-                    <div class="space-50"></div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row ml-auto mr-auto">
                 <div class="col-md-3" style="max-width: 16%;">
                     <div class="card-container first-card">
                         <div class="card-component">
@@ -286,10 +332,8 @@
     <div class="section section-testimonials" data-background-color="black">
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title">Trusted by 245,000+ People</h2>
-                <h5 class="description">The UI Kits, Templates and Dashboards that we've created are used by
-                    <b>245,000+ web developers</b> in over
-                    <b>426,000 Web Projects</b>. This is what some of them think:</h5>
+                <h2 class="title">Success Stories and Case Studies</h2>
+                <h5 class="description">Trusted by Thousands of People and Companies</h5>
             </div>
         </div>
         <div class="row">
@@ -308,27 +352,25 @@
                         <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
                                     <a href="#pablo">
-                                        <img class="img img-raised rounded" src="https://s3.amazonaws.com/creativetim_bucket/photos/154001/thumb.JPG?1501184024" />
+                                        <img class="img img-raised rounded" src="./assets/img/story_faraja.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"Awesome Design and very well organized code structure! Also, it contains numerous elements using which achieving the perfect or required template can be done with ease. Great job!"
+                                    <h5 class="card-description">“I created this LiveBinder to curate engaging content about copyright law and censorship, so that my students can see the relevance of these topics to their work, for themselves--they no longer have to take my word
+                                        for it.”
                                     </h5>
-                                    <h4 class="card-title">Stefan</h4>
-                                    <h6 class="category text-muted">Web Designer</h6>
-                                    <div class="card-footer">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                    </div>
+                                    <h4 class="card-title">Faraja Thompson </h4>
+                                    <h6 class="category text-muted">Middle School Teacher</h6>
+
                                 </div>
                             </div>
                         </div>
@@ -336,21 +378,14 @@
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
                                     <a href="#pablo">
-                                        <img class="img img-raised rounded" src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" />
+                                        <img class="img img-raised rounded" src="./assets/img/story_rhonda.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"It looks great and its somewhat futuristics cant wait to use it on a project here in nigeria i'm sure it would put me ahead.. I cant wait to hv enough money to buy ur product."
+                                    <h5 class="card-description">“My loaded Content Literacy LiveBinder doesn't disappear after their course is over. It's always available for them to access the multitude of help provided for their professional development.”
                                     </h5>
-                                    <h4 class="card-title">Mr. Bones</h4>
+                                    <h4 class="card-title">Rhonda Phillips</h4>
                                     <h6 class="category text-muted">Web Designer</h6>
-                                    <div class="card-footer">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -358,23 +393,72 @@
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
                                     <a href="#pablo">
-                                        <img class="img img-raised rounded" src="https://s3.amazonaws.com/creativetim_bucket/photos/123124/thumb.?1480480048" />
+                                        <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"Everything is perfect. Codes are really organized. It's easy to edit for my own purposes. It's great that it is built on top of Bootstrap 4."
+                                    <h5 class="card-description">"I use LiveBinders to keep all of the booktalks in one place. Teachers and librarians can easily locate appropriate titles, as tabs are color-coded by interest level. Everything they need to teach the book is located
+                                        in one place. In addition, as I discover new resources, I can quickly add them to the binder."
                                         <br>
                                         <br>
                                     </h5>
-                                    <h4 class="card-title">DOĞA</h4>
-                                    <h6 class="category text-muted">Web Developer</h6>
-                                    <div class="card-footer">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                    </div>
+                                    <h4 class="card-title">Deborah B. Ford</h4>
+                                    <h6 class="category text-muted">Director of Library Outreach</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-center">
+                            <div class="card card-testimonial card-plain">
+                                <div class="card-avatar">
+                                    <a href="#pablo">
+                                        <img class="img card-image img-raised" src="./assets/img/naf_logo.jpg" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-description">"Sharon Schueler, facilitator at the Sioux Falls, South Dakota Academy of Finance, describes how LiveBinders has helped make collecting evidence a seamless part of the school’s improvement plans. Says Schueler, “The
+                                        key to the success of using LiveBinders is to add, organize, and update evidence on a regular basis. Our action plan, along with documenting evidence in the LiveBinders template, helps to maintain our focus towards
+                                        continuous improvement. LiveBinders makes it so easy!"
+                                        <br>
+                                        <br>
+                                    </h5>
+                                    <h4 class="card-title">National Academy Foundation</h4>
+                                    <h6 class="category text-muted">Nonprofit organization</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-center">
+                            <div class="card card-testimonial card-plain">
+                                <div class="card-avatar">
+                                    <a href="#pablo">
+                                        <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-description">"LiveBinders allowed MOS to cut through the version control challenges of email without requiring customers to navigate a tangle of cloud storage locations like Google Docs and Dropbox links. LiveBinders gave MOS the
+                                        ability to present a diversity of materials, like text, drawings, blueprints, links, and spreadsheets in a single easy-to-access format which could be consistently kept up to date."
+                                        <br>
+                                        <br>
+                                    </h5>
+                                    <h4 class="card-title">MOS Office Furniture, Inc.</h4>
+                                    <h6 class="category text-muted">Director of Library Outreach</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-center">
+                            <div class="card card-testimonial card-plain">
+                                <div class="card-avatar">
+                                    <a href="#pablo">
+                                        <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-description">"I use LiveBinders to keep all of the booktalks in one place. Teachers and librarians can easily locate appropriate titles, as tabs are color-coded by interest level. Everything they need to teach the book is located
+                                        in one place. In addition, as I discover new resources, I can quickly add them to the binder."
+                                        <br>
+                                        <br>
+                                    </h5>
+                                    <h4 class="card-title">Deborah B. Ford</h4>
+                                    <h6 class="category text-muted">Director of Library Outreach</h6>
                                 </div>
                             </div>
                         </div>
@@ -484,98 +568,61 @@
                     </div>
                 </div>
             </div>
-            <!--     *********    PRICING 2     *********      -->
-            <div class="pricing-2" id="pricing-2">
+            <!--     *********    PRICING 3     *********      -->
+            <div class="pricing-3 section-image" style="background-image: url('assets/img/pricing3.jpg')" id="pricing-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto text-center">
                             <h2 class="title">Pick the best plan for you</h2>
-                            <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#pill1" role="tablist">
-                                            Legal Entity
-                                        </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#pill2" role="tablist">
-                                            Individual
-                                        </a>
-                                </li>
-                            </ul>
+                            <h4 class="description">You have Free Unlimited Updates on each package.</h4>
+                            <div class="section-space"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card card-pricing card-plain">
+                        <div class="col-md-4 ml-auto">
+                            <div class="card card-pricing">
                                 <div class="card-body">
-                                    <h6 class="category">Enterprise</h6>
+                                    <h6 class="category">Free</h6>
                                     <h1 class="card-title">
-                                        <small>$</small>59</h1>
+                                        <small>$</small>29
+                                        <small>/mo</small>
+                                    </h1>
                                     <ul>
-                                        <li>
-                                            <b>10GB</b> Disk Space</li>
-                                        <li>
-                                            <b>100GB</b> Monthly Bandwidth</li>
-                                        <li>
-                                            <b>20</b> Email Accounts</li>
-                                        <li>
-                                            <b>Unlimited</b> subdomains</li>
+                                        <li>1 GB of space</li>
+                                        <li>Limited Support</li>
+                                        <li>Support at $25/hour</li>
+                                        <li>Limited cloud access</li>
                                     </ul>
                                     <a href="#pablo" class="btn btn-primary btn-round">
-                                            Sign Up
-                                        </a>
+                                    Get Started
+                                </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card card-pricing card-background card-raised" style="background-image: url('assets/img/pricing2.jpg')">
+                        <div class="col-md-4 mr-auto">
+                            <div class="card card-pricing card-raised" data-background-color="orange">
                                 <div class="card-body">
-                                    <h6 class="category text-info">Professional</h6>
+                                    <h6 class="category">Upgraded</h6>
                                     <h1 class="card-title">
-                                        <small>$</small>29</h1>
+                                        <small>$</small>59
+                                        <small>/mo</small>
+                                    </h1>
                                     <ul>
-                                        <li>
-                                            <b>5GB</b> Disk Space</li>
-                                        <li>
-                                            <b>50GB</b> Monthly Bandwidth</li>
-                                        <li>
-                                            <b>10</b> Email Accounts</li>
-                                        <li>
-                                            <b>Unlimited</b> subdomains</li>
+                                        <li>5 GB of space</li>
+                                        <li>UnLimited Support</li>
+                                        <li>Unlimited Downloads</li>
+                                        <li>Full cloud access</li>
                                     </ul>
                                     <a href="#pablo" class="btn btn-neutral btn-round">
-                                            Sign Up
-                                        </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-pricing card-plain">
-                                <div class="card-body">
-                                    <h6 class="category">Standard</h6>
-                                    <h1 class="card-title">
-                                        <small>$</small>17</h1>
-                                    <ul>
-                                        <li>
-                                            <b>2GB</b> Disk Space</li>
-                                        <li>
-                                            <b>25GB</b> Monthly Bandwidth</li>
-                                        <li>
-                                            <b>5</b> Email Accounts</li>
-                                        <li>
-                                            <b>Unlimited</b> subdomains</li>
-                                    </ul>
-                                    <a href="#pablo" class="btn btn-primary btn-round">
-                                            Get Started
-                                        </a>
+                                    Get Started
+                                </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--     *********    END PRICING 2      *********      -->
-
+            <!--     *********    END PRICING 3      *********      -->
         </div>
     </div>
     <footer class="footer " data-background-color="black">

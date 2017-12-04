@@ -6600,7 +6600,7 @@ a.bg-dark:hover {
     .sticky-top {
         position: -webkit-sticky;
         position: sticky;
-        top: 60px;
+        top: 65px;
         z-index: 1020
     }
 }

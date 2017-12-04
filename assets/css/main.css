@@ -2,8 +2,8 @@ nav.navbar.navbar-expand-lg.bg-white.fixed-top.secondnav {
     background-color: #387ea0;
 }
 
-a.btn.btn-primary.btn-lg: focus {
-    background-color: #a92d63;
+a.btn.btn-primary.btn-lg:hover {
+    background-color: #FF3636;
 }
 
 .index-page .card-component {
