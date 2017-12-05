@@ -14,7 +14,6 @@
     <!-- CSS Files -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/css/demo.css" rel="stylesheet" />
 </head>
 
@@ -62,7 +61,6 @@
             </div>
         </div>
     </nav>
-
     <div class="header-3" style="height: 90%;">
         <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
@@ -85,52 +83,7 @@
                                 <div class="col-md-10 col-lg-6 m-auto justify-content-center">
                                     <div class="iframe-container">
                                         <iframe id="existing-iframe-example" width="640" height="360" src="https://www.youtube.com/embed/dM-FgpyVoJU?enablejsapi=1" frameborder="0" style="border: solid 4px #37474F"></iframe>
-                                        <script type="text/javascript">
-                                            var tag = document.createElement('script');
-                                            tag.id = 'iframe-demo';
-                                            tag.src = 'https://www.youtube.com/iframe_api';
-                                            var firstScriptTag = document.getElementsByTagName('script')[0];
-                                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-                                            var player;
-
-                                            function onYouTubeIframeAPIReady() {
-                                                player = new YT.Player('existing-iframe-example', {
-                                                    events: {
-                                                        'onReady': onPlayerReady,
-                                                        'onStateChange': onPlayerStateChange
-                                                    }
-                                                });
-                                            }
-
-                                            function onPlayerReady(event) {
-                                                document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
-                                            }
-
-                                            function changeBorderColor(playerStatus) {
-                                                var color;
-                                                if (playerStatus == -1) {
-                                                    color = "#37474F"; // unstarted = gray
-                                                } else if (playerStatus == 0) {
-                                                    color = "#FFFF00"; // ended = yellow
-                                                } else if (playerStatus == 1) {
-                                                    color = "#33691E"; // playing = green
-                                                } else if (playerStatus == 2) {
-                                                    color = "#DD2C00"; // paused = red
-                                                } else if (playerStatus == 3) {
-                                                    color = "#AA00FF"; // buffering = purple
-                                                } else if (playerStatus == 5) {
-                                                    color = "#FF6DOO"; // video cued = orange
-                                                }
-                                                if (color) {
-                                                    document.getElementById('existing-iframe-example').style.borderColor = color;
-                                                }
-                                            }
-
-                                            function onPlayerStateChange(event) {
-                                                changeBorderColor(event.data);
-                                            }
-                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -152,16 +105,16 @@
                                             <br />
                                             <h5>Connect with us on:</h5>
                                             <div class="buttons">
-                                                <a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                                                <a href="./index.html" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
                                                     <i class="fa fa-twitter"></i>
                                                 </a>
-                                                <a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                                                <a href="./index.html" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
                                                     <i class="fa fa-facebook-square"></i>
                                                 </a>
-                                                <a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                                                <a href="./index.html" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
                                                     <i class="fa fa-google-plus"></i>
                                                 </a>
-                                                <a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round  mt-2">
+                                                <a href="./index.html" class="btn btn-icon btn-neutral btn-danger btn-round  mt-2">
                                                     <i class="fa fa-instagram"></i>
                                                 </a>
                                             </div>
@@ -174,7 +127,6 @@
                 </div>
                 <div class="carousel-item">
                     <div class="page-header header-filter">
-                        <div class="page-header-image" style="background-image: url('assets/img/bg17.jpg');"></div>
                         <div class="content-center">
                             <div class="container">
                                 <div class="content-center">
@@ -188,10 +140,10 @@
                                             </ul>
                                             <br/>
                                             <div class="buttons">
-                                                <a href="#pablo" class="btn btn-neutral btn-primary btn-lg mr-1">
+                                                <a href="./index.html" class="btn btn-neutral btn-primary btn-lg mr-1">
                                                     <i class="now-ui-icons files_single-copy-04"></i> Read More..
                                                 </a>
-                                                <a href="#pablo" class="btn btn-primary btn-lg">
+                                                <a href="./index.html" class="btn btn-primary btn-lg">
                                                     <i class="now-ui-icons arrows-1_share-66"></i> See More...
                                                 </a>
                                             </div>
@@ -211,7 +163,6 @@
             </a>
         </div>
     </div>
-    <!--     *********    END HEADER 3      *********      -->
     <!-- Navbar -->
     <div class="container-fluid sticky-top" id="menu-dropdown" style="background-color: #387ea0;">
         <div class="row">
@@ -225,7 +176,7 @@
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
+                        <div class="collapse navbar-collapse" data-color="orange">
                             <ul class="navbar-nav mx-auto w-100 justify-content-center">
                                 <li class="nav-item">
                                     <a class="nav-link" href="./index.html">
@@ -271,17 +222,25 @@
         </div>
     </div>
     <!-- End Navbar -->
-    <div class="presentation-page section section-components" data-background-color="dark-red">
+    <div class="presentation-page section section-components">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="text-center title">Binder Counters
-                        <br>
-                        <small class="description">Designed to look gorgeous together</small>
-                    </h2>
+                <div class="col-md-4 ml-auto mr-auto">
+                    <h3 class="text-center title">Total Binders</h3>
+                    <h2 class="description text-center">2,085,955</h2>
+
+                </div>
+                <div class="col-md-4 ml-auto mr-auto">
+                    <h3 class="text-center title">Total Binder Views</h3>
+                    <h2 class="description text-center">248,399,955</h2>
+                </div>
+                <div class="col-md-4 ml-auto mr-auto">
+                    <h3 class="text-center title">Trees Saved</h3>
+                    <h2 class="description text-center">149,039</h2>
                 </div>
             </div>
-            <div class="row ml-auto mr-auto">
+            <hr>
+            <div class="row mx-auto">
                 <div class="col-md-3" style="max-width: 16%;">
                     <div class="card-container first-card">
                         <div class="card-component">
@@ -339,8 +298,8 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="testimonials-people">
-                    <img class="left-first-person img-raised rellax" data-rellax-speed="1" src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" alt="">
-                    <img class="left-second-person img-raised rellax" data-rellax-speed="3" src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="">
+                    <img class="left-first-person img-raised rellax" data-rellax-speed="1" src="./assets/img/12daystwitterLiveBinder.png" alt="">
+                    <img class="left-second-person img-raised rellax" data-rellax-speed="3" src="./assets/img/THANKSGIVING.png" alt="">
                     <img class="left-third-person img-raised rellax" data-rellax-speed="2" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="">
                     <img class="left-fourth-person img-raised rellax" data-rellax-speed="5" src="https://s3.amazonaws.com/uifaces/faces/twitter/kerem/128.jpg" alt="">
                     <img class="left-fifth-person img-raised rellax" data-rellax-speed="7" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
@@ -360,7 +319,7 @@
                         <div class="carousel-item active justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
+                                    <a href="./index.html">
                                         <img class="img img-raised rounded" src="./assets/img/story_faraja.png" />
                                     </a>
                                 </div>
@@ -377,7 +336,7 @@
                         <div class="carousel-item justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
+                                    <a href="./index.html">
                                         <img class="img img-raised rounded" src="./assets/img/story_rhonda.png" />
                                     </a>
                                 </div>
@@ -392,7 +351,7 @@
                         <div class="carousel-item justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
+                                    <a href="./index.html">
                                         <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
                                     </a>
                                 </div>
@@ -410,55 +369,54 @@
                         <div class="carousel-item justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
-                                        <img class="img card-image img-raised" src="./assets/img/naf_logo.jpg" />
+                                    <a href="./index.html">
+                                        <img class="img card-image img-raised" src="./assets/img/story_dawna.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"Sharon Schueler, facilitator at the Sioux Falls, South Dakota Academy of Finance, describes how LiveBinders has helped make collecting evidence a seamless part of the school’s improvement plans. Says Schueler, “The
-                                        key to the success of using LiveBinders is to add, organize, and update evidence on a regular basis. Our action plan, along with documenting evidence in the LiveBinders template, helps to maintain our focus towards
-                                        continuous improvement. LiveBinders makes it so easy!"
+                                    <h5 class="card-description">“My first semester students (and parents) used the binder, and I was able to correct the mistakes and shortcomings on the fly. I consider this one of the most important features of LiveBinders. As I learned my students’
+                                        needs, I was able to insert (or change) information in the binder that accommodated them with just a few clicks of the keys. Everyone who used the binder needed something special—whether they specifically asked
+                                        for or I observed it—poof! It was there!”
                                         <br>
                                         <br>
                                     </h5>
-                                    <h4 class="card-title">National Academy Foundation</h4>
-                                    <h6 class="category text-muted">Nonprofit organization</h6>
+                                    <h4 class="card-title">Dawna Hatcher</h4>
+                                    <h6 class="category text-muted">Teacher, Dacula Middle School</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
-                                        <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
+                                    <a href="./index.html">
+                                        <img class="img img-raised rounded" src="./assets/img/story_karma.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"LiveBinders allowed MOS to cut through the version control challenges of email without requiring customers to navigate a tangle of cloud storage locations like Google Docs and Dropbox links. LiveBinders gave MOS the
-                                        ability to present a diversity of materials, like text, drawings, blueprints, links, and spreadsheets in a single easy-to-access format which could be consistently kept up to date."
+                                    <h5 class="card-description">“Livebinders was a great platform for my Careers 7 class to showcase what they learned about the Nebraska Career Education Model. It was easy for them to learn how to use and it provided a digital portfolio they can
+                                        access in the future. Their portfolios have been a good resource for my current Careers 7 students.”
                                         <br>
                                         <br>
                                     </h5>
-                                    <h4 class="card-title">MOS Office Furniture, Inc.</h4>
-                                    <h6 class="category text-muted">Director of Library Outreach</h6>
+                                    <h4 class="card-title">Karma Yantzie</h4>
+                                    <h6 class="category text-muted">Teacher, Shickley Public School</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item justify-content-center">
                             <div class="card card-testimonial card-plain">
                                 <div class="card-avatar">
-                                    <a href="#pablo">
-                                        <img class="img img-raised rounded" src="./assets/img/story_deborah.png" />
+                                    <a href="./index.html">
+                                        <img class="img img-raised rounded" src="./assets/img/story_brian.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-description">"I use LiveBinders to keep all of the booktalks in one place. Teachers and librarians can easily locate appropriate titles, as tabs are color-coded by interest level. Everything they need to teach the book is located
-                                        in one place. In addition, as I discover new resources, I can quickly add them to the binder."
+                                    <h5 class="card-description">“LiveBinders is the easiest way for me to catalogue virtual resources, and the fastest way for colleagues and students to find them.”
                                         <br>
                                         <br>
                                     </h5>
-                                    <h4 class="card-title">Deborah B. Ford</h4>
-                                    <h6 class="category text-muted">Director of Library Outreach</h6>
+                                    <h4 class="card-title">Brian Page</h4>
+                                    <h6 class="category text-muted">Financial Education Teacher, Reading High School</h6>
                                 </div>
                             </div>
                         </div>
@@ -473,8 +431,8 @@
             </div>
             <div class="col-md-2">
                 <div class="testimonials-people">
-                    <img class="right-first-person img-raised rellax" data-rellax-speed="5" src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/128.jpg" alt="">
-                    <img class="right-second-person img-raised rellax" data-rellax-speed="1" src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg" alt="">
+                    <img class="right-first-person img-raised rellax" data-rellax-speed="5" src="./assets/img/Lighthouse.jpg" alt="">
+                    <img class="right-second-person img-raised rellax" data-rellax-speed="1" src="./assets/img/NOTATAASL.png" alt="">
                     <img class="right-fourth-person img-raised rellax" data-rellax-speed="7" src="https://s3.amazonaws.com/uifaces/faces/twitter/mattsince87/128.jpg" alt="">
                     <img class="right-fifth-person img-raised rellax" data-rellax-speed="3" src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg" alt="">
                     <img class="right-sixth-person img-raised rellax" data-rellax-speed="5" src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" alt="">
@@ -489,7 +447,7 @@
                 <div class="col-md-5">
                     <div class="image-container">
                         <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="assets/img/presentation-page/content1.png">
-                        <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="assets/img/presentation-page/content4.jpg">
+                        <img class="img img-raised rounded img-blog rellax" data-rellax-speed="7" src="assets/img/presentation-page/content4.jpg">
                     </div>
                 </div>
                 <div class="col-md-4 ml-auto mr-auto">
@@ -584,7 +542,7 @@
                                 <div class="card-body">
                                     <h6 class="category">Free</h6>
                                     <h1 class="card-title">
-                                        <small>$</small>29
+                                        <small>$</small>0
                                         <small>/mo</small>
                                     </h1>
                                     <ul>
@@ -593,7 +551,7 @@
                                         <li>Support at $25/hour</li>
                                         <li>Limited cloud access</li>
                                     </ul>
-                                    <a href="#pablo" class="btn btn-primary btn-round">
+                                    <a href="./index.html" class="btn btn-primary btn-round">
                                     Get Started
                                 </a>
                                 </div>
@@ -604,7 +562,7 @@
                                 <div class="card-body">
                                     <h6 class="category">Upgraded</h6>
                                     <h1 class="card-title">
-                                        <small>$</small>59
+                                        <small>$</small>19
                                         <small>/mo</small>
                                     </h1>
                                     <ul>
@@ -613,7 +571,7 @@
                                         <li>Unlimited Downloads</li>
                                         <li>Full cloud access</li>
                                     </ul>
-                                    <a href="#pablo" class="btn btn-neutral btn-round">
+                                    <a href="./index.html" class="btn btn-neutral btn-round">
                                     Get Started
                                 </a>
                                 </div>
@@ -625,39 +583,146 @@
             <!--     *********    END PRICING 3      *********      -->
         </div>
     </div>
-    <footer class="footer " data-background-color="black">
+
+    <footer class="footer footer-big" data-background-color="black">
         <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                    </li>
-                    <li>
-                        <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                                License
-                            </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="./index.html">
+                            <h5>Now Ui Kit PRO</h5>
+                        </a>
+                        <p>Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>About Us</h5>
+                        <ul class="links-vertical">
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Blog
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        About Us
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Presentation
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Contact Us
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Market</h5>
+                        <ul class="links-vertical">
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Sales FAQ
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        How to Register
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Sell Goods
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Receive Payment
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Transactions Issues
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                        Affiliates Program
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Legal</h5>
+                        <ul class="links-vertical">
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                            Transactions FAQ
+                                        </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                            Terms &amp; Conditions
+                                        </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="text-muted">
+                                            Licenses
+                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Follow Us</h5>
+                        <ul class="social-buttons">
+                            <li>
+                                <a href="./index.html" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="btn btn-icon btn-neutral btn-google btn-round">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="btn btn-icon btn-neutral btn-instagram btn-round">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <br>
+                        <h5>Numbers Don't Lie</h5>
+                        <h5>2,085,955
+                            <small class="text-muted">Total Binders</small>
+                        </h5>
+                        <h5>248,399,148
+                            <small class="text-muted">Total Binder Views</small>
+                        </h5>
+                        <h5>149,039
+                            <small class="text-muted">Trees Saved</small>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div class="copyright">
-                &copy;
+                Copyright ©
                 <script>
                     document.write(new Date().getFullYear())
-                </script>, Designed by
-                <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </script> LiveBinders
             </div>
         </div>
     </footer>
@@ -700,6 +765,52 @@
         }
 
     });
+</script>
+<script type="text/javascript">
+    var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('existing-iframe-example', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+    }
+
+    function changeBorderColor(playerStatus) {
+        var color;
+        if (playerStatus == -1) {
+            color = "#37474F"; // unstarted = gray
+        } else if (playerStatus == 0) {
+            color = "#FFFF00"; // ended = yellow
+        } else if (playerStatus == 1) {
+            color = "#33691E"; // playing = green
+        } else if (playerStatus == 2) {
+            color = "#DD2C00"; // paused = red
+        } else if (playerStatus == 3) {
+            color = "#AA00FF"; // buffering = purple
+        } else if (playerStatus == 5) {
+            color = "#FF6DOO"; // video cued = orange
+        }
+        if (color) {
+            document.getElementById('existing-iframe-example').style.borderColor = color;
+        }
+    }
+
+    function onPlayerStateChange(event) {
+        changeBorderColor(event.data);
+    }
 </script>
 
 </html>
