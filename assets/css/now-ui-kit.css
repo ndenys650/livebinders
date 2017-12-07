@@ -8849,6 +8849,7 @@ Created using IcoMoon - icomoon.io
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
 }
 
 .presentation-page .section-sections .section-description {
@@ -9461,7 +9462,6 @@ Created using IcoMoon - icomoon.io
 }
 
 .section {
-    padding: 70px 0;
     position: relative;
     background: #FFFFFF;
 }
@@ -9561,7 +9561,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header {
-    min-height: 100vh;
+    min-height: 92vh;
     max-height: 999px;
     padding: 0;
     color: #FFFFFF;

@@ -6,6 +6,16 @@ a.btn.btn-primary.btn-lg:hover {
     background-color: #FF3636;
 }
 
+@media screen and (max-width: 991px) {
+    .page-header {
+        min-height: 99vh;
+        max-height: 999px;
+        padding: 0;
+        color: #FFFFFF;
+        position: relative;
+    }
+}
+
 .index-page .card-component {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
