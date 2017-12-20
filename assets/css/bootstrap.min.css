@@ -5355,7 +5355,8 @@ button.close {
 .carousel-control-next,
 .carousel-control-prev {
     position: absolute;
-    top: 0;
+    padding-top: 100%;
+    padding-bottom: 20px;
     bottom: 0;
     display: -ms-flexbox;
     display: flex;
@@ -6600,7 +6601,7 @@ a.bg-dark:hover {
     .sticky-top {
         position: -webkit-sticky;
         position: sticky;
-        top: 67px;
+        top: 72px;
         z-index: 1020
     }
 }

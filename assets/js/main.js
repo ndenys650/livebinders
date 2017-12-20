@@ -2,49 +2,42 @@ $(document).ready(function() {
 
     "use strict";
 
-    // -------------- Jquery CountTo (Project Counter) -------------- 
-    $('.counter').appear(function() {
-        $('.timer').each(count);
-
-        function count(options) {
-            var $this = $(this);
-            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-            $this.countTo(options);
-        }
-    });
-
-});
-
-
-$(window).load(function() {
-
-    // -------------- Jquery Isotope Setting -------------- 
-
-    var $container = $('.portfoliocontent');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
-
-    $('.portfoliofilter a').on('click', function(e) {
+    $(".scroll-info a[href^='#']").on('click', function(e) {
         e.preventDefault();
-        $('.portfoliofilter .current').removeClass('current');
-        $(this).addClass('current');
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - 80
+        }, 1000);
+    });
 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        return false;
+    $(".navbar-nav li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - 60
+        }, 1000);
+    });
+
+    // -------------- Jquery CountTo (Project Counter) -------------- 
+    $(window).scroll(startCounter);
+
+    function startCounter() {
+        if ($(window).scrollTop() > 200) {
+            $(window).off("scroll", startCounter);
+            $('.Count').each(function() {
+                var $this = $(this);
+                jQuery({ Counter: 0 }).animate({ Counter: $this.attr("data") }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+        }
+    }
+
+    $('.flip').hover(function() {
+        $(this).find('.card').toggleClass('flipped');
+
     });
 
 });

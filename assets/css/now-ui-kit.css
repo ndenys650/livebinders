@@ -1491,7 +1491,7 @@ select.selectpicker {
 }
 
 .bootstrap-select>.dropdown-toggle {
-    width: 100%;
+    width: 40%;
     padding-right: 25px;
     z-index: 1;
 }
@@ -5458,6 +5458,7 @@ body {
     font-size: 0.7142em;
     padding: 0.5rem 1.6rem;
     line-height: 1.625rem;
+    margin: 0 0.3rem;
 }
 
 .navbar .navbar-nav .nav-link:not(.btn) i.fa+p,
@@ -7186,7 +7187,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .modal .modal-login {
-    max-width: 320px;
+    max-width: 500px;
 }
 
 .modal .modal-login .card-login .logo-container {
@@ -8793,6 +8794,14 @@ Created using IcoMoon - icomoon.io
     display: block;
 }
 
+.footer ul.links-vertical li a:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
 .footer ul li {
     display: inline-block;
 }
@@ -8854,7 +8863,7 @@ Created using IcoMoon - icomoon.io
 
 .presentation-page .section-sections .section-description {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .presentation-page .section-sections .col-md-3 {
@@ -9702,12 +9711,12 @@ Created using IcoMoon - icomoon.io
 }
 
 .section-story-overview .image-container:nth-child(2) {
-    margin-top: 420px;
+    margin-top: 350px;
     margin-left: -105px;
 }
 
 .section-story-overview p.blockquote {
-    width: 220px;
+    width: 350px;
     min-height: 180px;
     text-align: left;
     position: absolute;
@@ -9827,7 +9836,6 @@ Created using IcoMoon - icomoon.io
 
 .section-images {
     max-height: 670px;
-    height: 670px;
 }
 
 .section-images .hero-images-container,
@@ -10143,7 +10151,7 @@ Created using IcoMoon - icomoon.io
 [class*="pricing-"],
 [class*="testimonials-"],
 [class*="contactus-"] {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .page-header .carousel .carousel-indicators {
@@ -10500,6 +10508,7 @@ Created using IcoMoon - icomoon.io
 
 .section-testimonials,
 .testimonials-2 {
+    height: 70%;
     background-image: none;
 }
 
@@ -10897,7 +10906,17 @@ Created using IcoMoon - icomoon.io
         padding-bottom: .5rem;
     }
     .navbar .navbar-nav {
-        margin-top: 53px;
+        flex-direction: row;
+    }
+    .navbar .top {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .navbar .top li p {
+        display: inline;
+    }
+    .navbar .midbar li p {
+        display: none;
     }
     .navbar .navbar-nav.navbar-logo {
         top: 0;
@@ -11328,17 +11347,14 @@ Created using IcoMoon - icomoon.io
         max-height: 500px;
     }
     .section-images .hero-images-container {
-        max-width: 500px;
+        margin-top: 20px;
+        max-width: 400px;
     }
     .section-images .hero-images-container-1 {
-        right: 10%;
-        top: 68%;
         max-width: 269px;
     }
     .section-images .hero-images-container-2 {
-        right: 5%;
         max-width: 135px;
-        top: 93%;
     }
 }
 

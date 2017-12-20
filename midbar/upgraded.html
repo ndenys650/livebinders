@@ -35,9 +35,11 @@
                     <li class="nav-item justify-content-center" style="padding-top: 5px;">
                         <div class="col">
                             <div class="input-group">
-                                <span class="input-group-addon">
-                                                <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </span>
+                                <span class="input-group-addon" style="padding-bottom: 6.5px; padding-top: 6.5px; padding-right: 4px">
+                                        <button class="" data-toggle="modal" data-target="#loginModal" rel="tooltip" title="Advanced Search" data-placement="bottom" style="background-color: transparent; border: none;">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>  
+                                </span>
                                 <input type="text" class="form-control" placeholder="Search" style="background-color: white;">
                             </div>
                         </div>
@@ -65,103 +67,33 @@
             </div>
         </div>
     </nav>
-    <div class="header-3" style="height: 90%;">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="page-header header-filter">
-                        <div class="content-center">
-                            <div class="container">
-                                <div class="content-center">
-                                    <div class="row">
-                                        <div class="col-md-8 m-auto text-center">
-                                            <h1 class="title">Simplifying the Cloud Sharing Experience</h1>
-                                            <h4 class="description">Engage with live content, not just a list of links</h4>
-                                            <h4 class="description">Provide context for your resources</h4>
-                                            <h4 class="description">Package it professionally for flexible sharing</h4>
-                                            <br />
-                                            <h5>Connect with us on:</h5>
-                                            <div class="buttons">
-                                                <a href="../index.html" class="btn btn-icon btn-neutral btn-twitter btn-round mt-2" rel="tooltip" title="Follow Us on Twitter" data-placement="bottom">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                                <a href="../index.html" class="btn btn-icon btn-neutral btn-facebook btn-round mt-2" rel="tooltip" title="Like Us on Facebook" data-placement="bottom">
-                                                    <i class="fa fa-facebook-square"></i>
-                                                </a>
-                                                <a href="../index.html" class="btn btn-icon btn-neutral btn-youtube btn-round mt-2" rel="tooltip" title="Join Us on Youtube" data-placement="bottom">
-                                                    <i class="fa fa-youtube-play"></i>
-                                                </a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="header-1">
+        <div class="page-header header-filter">
+            <div class="page-header-image" style="background-image: url('assets/img/libraries.jpg');"></div>
+            <div class="content-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto text-left">
+                            <h1 class="title" style="font-weight: 200;"><span style="color:red; font-weight: 500;">Live</span><span style="color:grey; font-weight: 500;">Binders</span><br/>Your 3-ring binder <br/>on the Cloud</h1>
+                            <div>
+                                <h5 class="info-title"><i class="fa fa-book" aria-hidden="true"></i> <strong style="padding-left:10px;">Look Good</strong></h5>
+                                <h5 class="info-title"><i class="fa fa-book" aria-hidden="true"></i> <strong style="padding-left:10px;">Impress Everyone</strong></h5>
+                                <h5 class="info-title"><i class="fa fa-book" aria-hidden="true"></i> <strong style="padding-left:10px;">Share!</strong></h5>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="page-header">
-                        <div class="content-center">
-                            <div class="row text-center mx-5">
-                                <div class="col-md-6 m-auto justify-content-center">
-                                    <h1 class="title">Now re you ready to Present?</h1>
-                                    <h4 class="description ">Put it in a LiveBinder!</h4>
-                                    <br>
-                                    <button class="btn btn-primary btn-lg" rel="tooltip" title="It's Free!" data-placement="bottom">Sign Up!</button>
-
-                                </div>
-                                <div class="col-md-10 col-lg-6 m-auto justify-content-center">
-                                    <div class="iframe-container">
-                                        <iframe id="existing-iframe-example" width="640" height="360" src="https://www.youtube.com/embed/dM-FgpyVoJU?enablejsapi=1" frameborder="0" style="border: solid 4px #2c2c2c"></iframe>
-                                    </div>
-                                </div>
+                            <br />
+                            <div class="buttons">
+                                <a href="#pablo" class="btn btn-info btn-lg mr-3">
+                                    Learn More
+                                </a>
+                                <button class="btn btn-info btn-lg mr-3" data-toggle="modal" data-target="#myModal">
+                                    Watch Video
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="page-header header-filter">
-                        <div class="content-center">
-                            <div class="container">
-                                <div class="content-center">
-                                    <div class="row">
-                                        <div class="col-md-6 text-left">
-                                            <h3 class="title">An online digital binder for organizing your resources</h3>
-                                            <ul>
-                                                <li>Look professional</li>
-                                                <li>Feel organized</li>
-                                                <li>Make an impact</li>
-                                            </ul>
-                                            <br/>
-                                            <div class="buttons">
-                                                <a href="../index.html" class="btn btn-neutral btn-primary btn-lg mr-1">
-                                                    <i class="now-ui-icons files_single-copy-04"></i> Read More..
-                                                </a>
-                                                <a href="../index.html" class="btn btn-primary btn-lg">
-                                                    <i class="now-ui-icons arrows-1_share-66"></i> See More...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <i class="now-ui-icons arrows-1_minimal-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <i class="now-ui-icons arrows-1_minimal-right"></i>
-            </a>
         </div>
     </div>
     <!-- Navbar -->
@@ -170,14 +102,7 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg bg-primary justify-content-center">
                     <div class="container justify-content-center">
-                        <div class="navbar-translate">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdownMenuLink" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-bar bar1"></span>
-                                <span class="navbar-toggler-bar bar2"></span>
-                                <span class="navbar-toggler-bar bar3"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" data-color="orange">
+                        <div class="navbar-nav" data-color="orange">
                             <ul class="navbar-nav mx-auto w-100 justify-content-center">
                                 <li class="nav-item">
                                     <a class="nav-link" href="../index.html">
@@ -593,22 +518,22 @@
                             </a>
                             <ul class="links-vertical">
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         Blog
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         Events
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         Contact Us
                                     </a>
                                 </li>
@@ -618,37 +543,37 @@
                             <h5>Product</h5>
                             <ul class="links-vertical">
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     Featured Binders
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         For Business
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For Education
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For ePortfolios
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For Evidence
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For Conferences
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         For Handbooks
                                         </a>
                                 </li>
@@ -658,42 +583,42 @@
                             <h5>Support</h5>
                             <ul class="links-vertical">
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                     Help
                                                 </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                             Tutorials
                                         </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                             Trainers
                                         </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                             Terms of Service
                                         </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                 Privacy
                                             </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                 Document Security
                                             </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                     Accessibility
                                                 </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                         SEO
                                                     </a>
                                 </li>
@@ -703,32 +628,32 @@
                             <h5>Apps and More</h5>
                             <ul class="links-vertical">
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                 For iPad
                                             </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For iPhone
                                             </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                     For Android
                                             </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                         Conferences
                                                 </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                             Bookmarklets
                                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../index.html" class="text-muted">
+                                    <a href="../index.html">
                                                 Embed Binders
                                                         </a>
                                 </li>
@@ -773,10 +698,30 @@
                     Copyright © 2006 -
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> LiveBinders
+                    </script> <span style="color: #FF3636; ">Live</span><span style="color: grey;">Binders</span>
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                        </button>
+                        <h4 class="title title-up">Introduction to LiveBinders</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="iframe-container">
+                            <iframe id="existing-iframe-example" width="640" height="360" src="https://www.youtube.com/embed/dM-FgpyVoJU?enablejsapi=1" frameborder="0" style="border: solid 4px #2c2c2c"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <!--   Core JS Files   -->
