@@ -69,7 +69,8 @@
     </nav>
     <div class="header-1">
         <div class="page-header header-filter">
-            <div class="page-header-image" style="background-image: url('assets/img/libraries.jpg');"></div>
+            <div class="page-header-image" data-background-color style="background-image: url(../assets/img/libraries.jpg); z-index: 2;
+                opacity: 0.1;"></div>
             <div class="content-center">
                 <div class="container">
                     <div class="row">
@@ -96,7 +97,7 @@
         </div>
     </div>
     <!-- Navbar -->
-    <div class="container-fluid sticky-top" id="menu-dropdown #" style="bottom: 0; background-color: #387ea0;">
+    <div class="container-fluid sticky-top" id="menu-dropdown" style="bottom: 0; background-color: #387ea0;">
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg bg-primary justify-content-center">
@@ -104,31 +105,31 @@
                         <div class="navbar-nav" data-color="orange" href="#">
                             <ul class="navbar-nav midbar mx-auto w-100 justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../index.html">
+                                    <a class="nav-link" style="color: white;" href="../index.html">
                                         <i class="fa fa-home" aria-hidden="true"></i>
                                         <p>Home</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./business.html">
-                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                    <a class="nav-link" href="./business.html#menu-dropdown">
+                                        <i class=" fa fa-briefcase " aria-hidden="true "></i>
                                         <p>Business</p>
                                     </a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="./featured.html">
+                                    <a class="nav-link" href="./featured.html#menu-dropdown">
                                         <i class="fa fa-bookmark" aria-hidden="true"></i>
                                         <p>Featured</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./education.html">
+                                    <a class="nav-link" href="./education.html#menu-dropdown">
                                         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                         <p>Education</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./upgraded.html">
+                                    <a class="nav-link" href="./upgraded.html#menu-dropdown">
                                         <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
                                         <p>Upgraded</p>
                                     </a>
@@ -141,329 +142,466 @@
         </div>
     </div>
     <!-- End Navbar -->
-    <div class="presentation-page section section-components">
-        <div class="section section-sections" data-background-color="gray">
-            <div class="container">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="section-description text-center">
-                        <h2 class="title">Sections you will love</h2>
-                        <h5 class="description"> Build pages in no time using pre-made sections! From headers to footers, you will be able to choose the best combination for your project. We have created multiple sections for you to put together and customise into pixel perfect
-                            example pages.</h5>
-                        <a href="sections.html" target="_blank" class="btn btn-primary btn-round">View All Sections</a>
+    <div class="features-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Featured by Us</h2>
+                    <h4 class="description"></h4>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised text-center" data-background-color style="background-image: url( '../assets/img/bindercovers/download.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+
+                            <div class="description ">
+                                <h4 class="info-title ">From the Dashboard to the Desk </h4>
+
+                            </div>
+                            <a href="#pablo ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-1.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">#12daystwitter 2017 </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-2.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Computer Science </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-2.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">#notataasl </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="section-cols">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-3.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Hyperdoc Library </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-3.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">RCPS </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-4.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Solar Eclipse </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-4.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">JLG Booktalks to Go Fall 2017 </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/features5.jpg" alt="">
-                            <img class="rellax" data-rellax-speed="5" src="../assets/img/presentation-page/features2.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/features6.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/features7.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/features8.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/blogpost1.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/blogpost2.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/blogpost3.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/blogpost4.jpg" alt="">
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-5.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Pilgrims and Native Americans</h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/blogpost5.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/team1.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/team2.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/team3.jpg" alt="">
-                            <img class="rellax" data-rellax-speed="5" src="../assets/img/presentation-page/contact1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/team4.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/team5.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/projects1.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/projects2.jpg" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-5.png'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">OKAGE Geography 101 </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/projects4.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/projects5.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/pricing1.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/pricing2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/pricing3.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/pricing4.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/pricing5.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/testimonials1.jpg" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-6.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">First Five Days </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/testimonials2.jpg" alt="">
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-7.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">HIGH SCHOOL RESEARCH RESOURCES </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/testimonials3.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-8.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">#notatiste17 </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/contact1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-9.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Creative Circuits </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="../assets/img/presentation-page/contact2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download-10.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Math As A Second Language </h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-background card-raised " data-background-color style="background-image: url( '../assets/img/bindercovers/download.jpg'); margin: 25px;
+                            padding: 25px;
+                            height: 250px;
+                            width: 250px;
+                            background-color: grey;">
+                        <div class="info ">
+                            <div class="description ">
+                                <h4 class="info-title ">Case Manager Info</h4>
+                                <a href="#pablo ">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="col-md-8 ml-auto mr-auto">
+                <div class="section-description text-center">
+                    <a href="sections.html" target="_blank" class="btn btn-primary btn-round">View More Featured Binders</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer footer-big" data-background-color="black">
-        <div class="container">
-            <div class="content">
-                <div class="row">
-
-                    <div class="col-md-2">
-                        <a href="../index.html">
-                            <h5>LiveBinders</h5>
+    <footer class="footer footer-big " data-background-color="black">
+        <div class="container ">
+            <div class="content ">
+                <div class="row text-center ">
+                    <div class="col-md-2 ">
+                        <a href="../index.html ">
+                            <h5 style="color: #FF3636; ">Live<span style="color: grey;">Binders</span></h5>
                         </a>
-                        <ul class="links-vertical">
+                        <ul class="links-vertical ">
                             <li>
-                                <a href="https://livebinders.wordpress.com/">
-                                    Blog
-                                </a>
+                                <a href="https://livebinders.wordpress.com/ ">
+                                        Blog
+                                    </a>
                             </li>
                             <li>
-                                <a href="aboutus.html">
-                                    About Us
-                                </a>
+                                <a href="./footer/aboutus.html ">
+                                        About Us
+                                    </a>
                             </li>
                             <li>
-                                <a href="events.html">
-                                    Events
-                                </a>
+                                <a href="./footer/events.html ">
+                                        Events
+                                    </a>
                             </li>
                             <li>
-                                <a href="contactus.html">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>Product</h5>
-                        <ul class="links-vertical">
-                            <li>
-                                <a href="../midbar/featured.html">
-                                    Featured Binders
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../midbar/business.html">
-                                    For Business
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../midbar/education.html">
-                                    For Education
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../midbar/featured.html">
-                                    For ePortfolios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../midbar/featured.html">
-                                    For Evidence
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html">
-                                    For Conferences
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html">
-                                    For Handbooks
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    Learn More
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    Stories
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    Pricing
-                                </a>
+                                <a href="./footer/contactus.html ">
+                                        Contact Us
+                                    </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
-                        <h5>Support</h5>
-                        <ul class="links-vertical">
+                    <div class="col-md-2 ">
+                        <h5 style="color: #FF3636; ">Product</h5>
+                        <ul class="links-vertical ">
                             <li>
-                                <a href="../index.html">
-                                    Help
-                                </a>
+                                <a href="./midbar/featured.html ">
+                                        Featured Binders
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Tutorials
-                                </a>
+                                <a href="./midbar/business.html ">
+                                        For Business
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Trainers
-                                </a>
+                                <a href="./midbar/education.html ">
+                                        For Education
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Terms of Service
-                                </a>
+                                <a href="./footer/product/evenmore.html ">
+                                        Learn More
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Privacy
-                                </a>
+                                <a href="./footer/product/stories.html ">
+                                        Stories
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Document Security
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html">
-                                    Accessibility
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html">
-                                    SEO
-                                </a>
+                                <a href="./footer/product/pricing.html ">
+                                        Pricing
+                                    </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
-                        <h5>Apps and More</h5>
-                        <ul class="links-vertical">
+                    <div class="col-md-2 ">
+                        <h5 style="color: #FF3636; ">Support</h5>
+                        <ul class="links-vertical ">
                             <li>
-                                <a href="../index.html">
-                                    For iPad
-                                </a>
+                                <a href="./footer/support/help.html ">
+                                        Help
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    For iPhone
-                                </a>
+                                <a href="./footer/support/tutorials.html ">
+                                        Tutorials
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    For Android
-                                </a>
+                                <a href="./footer/support/trainers.html ">
+                                        Trainers
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Conferences
-                                </a>
+                                <a href="./footer/support/terms.html ">
+                                        Terms of Service
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Bookmarklets
-                                </a>
+                                <a href="./footer/support/privacy.html ">
+                                        Privacy
+                                    </a>
                             </li>
                             <li>
-                                <a href="../index.html">
-                                    Embed Binders
-                                </a>
+                                <a href="./footer/support/security.html ">
+                                        Document Security
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/support/accessibility.html ">
+                                        Accessibility
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/support/seo.html ">
+                                        SEO
+                                    </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2 ">
+                        <h5 style="color: #FF3636; ">Applications</h5>
+                        <ul class="links-vertical ">
+                            <li>
+                                <a href="./footer/applications/ios.html ">
+                                        For iOS
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/android.html ">
+                                        For Android
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/conferences.html ">
+                                        Conferences
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/bookmarklets.html ">
+                                        Bookmarklets
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/embedded.html ">
+                                        Embed Binders
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/eports.html ">
+                                        ePortfolios
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/evidence.html ">
+                                        Evidence
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/conferences.html ">
+                                        Conferences
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="./footer/applications/handbooks.html ">
+                                        Handbooks
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
                         <h5>Follow Us</h5>
-                        <ul class="social-buttons">
+                        <ul class="social-buttons ">
                             <li>
-                                <a href="../index.html" class="btn btn-icon btn-neutral btn-twitter btn-round" rel="tooltip" title="Follow Us on Twitter" data-placement="bottom">
-                                    <i class="fa fa-twitter"></i>
+                                <a href="./index.html " class="btn btn-icon btn-neutral btn-twitter btn-round " rel="tooltip " title="Follow Us on Twitter " data-placement="bottom ">
+                                    <i class="fa fa-twitter "></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="../index.html" class="btn btn-icon btn-neutral btn-facebook btn-round" rel="tooltip" title="Like Us on Facebook" data-placement="bottom">
-                                    <i class="fa fa-facebook-square"></i>
+                                <a href="./index.html " class="btn btn-icon btn-neutral btn-facebook btn-round " rel="tooltip " title="Like Us on Facebook " data-placement="bottom ">
+                                    <i class="fa fa-facebook-square "></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="../index.html" class="btn btn-icon btn-neutral btn-youtube btn-round" rel="tooltip" title="Join Us on Youtube" data-placement="bottom">
-                                    <i class="fa fa-youtube-play"></i>
+                                <a href="./index.html " class="btn btn-icon btn-neutral btn-youtube btn-round " rel="tooltip " title="Join Us on Youtube " data-placement="bottom ">
+                                    <i class="fa fa-youtube-play "></i>
                                 </a>
                             </li>
 
                         </ul>
                         <br>
-                        <h5>Numbers Don't Lie</h5>
+                        <h5>Numbers So Far</h5>
                         <h5>2,085,955
-                            <small class="text-muted">Total Binders</small>
+                            <small class="text-muted ">Total Binders</small>
                         </h5>
                         <h5>248,399,148
-                            <small class="text-muted">Total Binder Views</small>
+                            <small class="text-muted ">Total Binder Views</small>
                         </h5>
                         <h5>149,039
-                            <small class="text-muted">Trees Saved</small>
+                            <small class="text-muted ">Trees Saved</small>
                         </h5>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="copyright">
+            <div class="copyright ">
                 Copyright © 2006 -
                 <script>
                     document.write(new Date().getFullYear())
@@ -487,6 +625,49 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-primary" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="card card-login card-plain">
+                    <div class="modal-header justify-content-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
+                        <div class="header header-primary text-center">
+                            <div class="">
+                                <img src="assets/img/lb_logo.png" alt="">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" method="" action="">
+                            <div class="card-content">
+                                <h4>Search all public binders:</h4>
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <h4>Or Search in: for:</h4>
+                                <div class="input-group form-group-no-border input-lg">
+
+                                    <span class="input-group-addon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </span>
+                                    <input type="password" placeholder="" class="form-control">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="#pablo" class="btn btn-neutral btn-round btn-lg btn-block">Get Started</a>
+                    </div>
                 </div>
             </div>
         </div>

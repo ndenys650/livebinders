@@ -6,6 +6,16 @@ a.btn.btn-primary.btn-lg:hover {
     background-color: #FF3636;
 }
 
+.presentation-page .section-sections .container-fluid .section-cols img {
+    padding: 25px;
+    height: 250px;
+    width: 250px;
+}
+
+i .fa .fa-caret-square-o-up {
+    color: white;
+}
+
 @media screen and (max-width: 991px) {
     .page-header {
         min-height: 99vh;

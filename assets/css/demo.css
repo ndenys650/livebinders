@@ -474,6 +474,11 @@
 .presentation-page .section-sections .container-fluid img {
     position: relative;
     z-index: 2;
+    margin: 25px;
+    padding: 25px;
+    height: 250px;
+    width: 250px;
+    background-color: grey;
 }
 
 .presentation-page .section-examples {
