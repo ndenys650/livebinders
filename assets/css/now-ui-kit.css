@@ -8288,11 +8288,6 @@ Created using IcoMoon - icomoon.io
     margin: -60px auto 0;
 }
 
-.card-profile .card-avatar img,
-.card-testimonial .card-avatar img {
-    border-radius: 50% !important;
-}
-
 .card-profile .card-avatar+.card-body,
 .card-testimonial .card-avatar+.card-body {
     margin-top: 15px;

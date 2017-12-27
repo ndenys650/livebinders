@@ -1,3 +1,17 @@
+a #down_arrow {
+    opacity: ;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -30px;
+    transition: all .5s ease;
+    color: white;
+}
+
+#down_arrow i.fa.fa-chevron-down.fa-6::before {
+    color: white;
+}
+
 nav.navbar.navbar-expand-lg.bg-white.fixed-top.secondnav {
     background-color: #387ea0;
 }
